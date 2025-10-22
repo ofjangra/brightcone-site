@@ -144,7 +144,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-foreground/80">
-            Get answers to common questions about Brightcone's platform, security, and implementation.
+            Get answers to common questions about Brightcone&apos;s platform, security, and implementation.
           </p>
         </div>
 

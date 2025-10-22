@@ -115,7 +115,7 @@ const Products = () => {
             Our Products
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-foreground/80 leading-relaxed">
-            At <strong className="text-foreground">Brightcone.ai</strong>, we don't just advise - we deliver enterprise-ready
+            At <strong className="text-foreground">Brightcone.ai</strong>, we don&apos;t just advise - we deliver enterprise-ready
             AI platforms and solutions that scale with your business. Our flagship <strong>Brightcone Platform</strong> provides
             the secure, governed AI foundation enterprises need, while our product suite addresses specific business
             challenges across industries.
@@ -443,7 +443,7 @@ const Products = () => {
               Unlock the Power of AI - Safely, Intelligently, and at Enterprise Scale.
             </h3>
             <p className="text-foreground/70 mb-6 max-w-2xl mx-auto">
-              From workforce automation to clinical insights, Brightcone's platform and product suite enable enterprises to adopt AI responsibly and drive measurable results.
+              From workforce automation to clinical insights, Brightcone&apos;s platform and product suite enable enterprises to adopt AI responsibly and drive measurable results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

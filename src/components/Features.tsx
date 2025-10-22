@@ -68,7 +68,7 @@ const Features = () => {
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-foreground/80 leading-relaxed">
             Most enterprises know they should be using AI, but many are stuck in endless pilots that never scale.{' '}
-            <strong className="text-foreground">Brightcone's solutions</strong> are designed to cut through the noise,
+            <strong className="text-foreground">Brightcone&apos;s solutions</strong> are designed to cut through the noise,
             reduce risk, and deliver measurable business impact in <strong>weeks, not years</strong>.
           </p>
         </div>
@@ -245,7 +245,7 @@ const Features = () => {
             <div className="pt-6 border-t border-foreground/10">
               <p className="text-sm font-semibold text-foreground/50 mb-2">OUTCOME</p>
               <p className="text-foreground/80 italic">
-                Tailored AI that understands your industry's challenges and delivers ROI fast.
+                Tailored AI that understands your industry&apos;s challenges and delivers ROI fast.
               </p>
             </div>
           </div>

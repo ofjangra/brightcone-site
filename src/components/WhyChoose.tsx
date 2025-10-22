@@ -192,7 +192,7 @@ const WhyChoose = () => {
             Why Choose Brightcone
           </h2>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
-            Enterprise AI adoption that's secure, scalable, and delivers measurable results from day one.
+            Enterprise AI adoption that&apos;s secure, scalable, and delivers measurable results from day one.
           </p>
         </div>
 
@@ -274,7 +274,7 @@ const WhyChoose = () => {
                     {item.expandedContent.quote && (
                       <div className="mt-6 p-4 bg-gradient-to-br from-teal/5 to-electric-blue/5 border border-foreground/10 rounded-xl">
                         <p className="text-foreground/90 italic mb-2">
-                          "{item.expandedContent.quote.text}"
+                          &quot;{item.expandedContent.quote.text}&quot;
                         </p>
                         <p className="text-sm text-foreground/60 font-semibold">
                           — {item.expandedContent.quote.author}

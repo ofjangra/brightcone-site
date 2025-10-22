@@ -19,7 +19,7 @@ const FinalCTA = () => {
           <div className="relative z-10">
             {/* Headline */}
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-teal to-electric-blue bg-clip-text text-transparent">
-              Let's Turn AI Into Impact.
+              Let&apos;s Turn AI Into Impact.
             </h2>
 
             {/* Copy */}

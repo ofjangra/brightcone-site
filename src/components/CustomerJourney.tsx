@@ -70,7 +70,7 @@ const CustomerJourney = () => {
             Wherever You Are in Your AI Journey, Brightcone Meets You There
           </p>
           <p className="max-w-4xl mx-auto text-lg text-foreground/80 leading-relaxed">
-            AI adoption isn't one-size-fits-all. Whether you're exploring opportunities, testing pilots, or ready to
+            AI adoption isn&apos;t one-size-fits-all. Whether you&apos;re exploring opportunities, testing pilots, or ready to
             scale, Brightcone provides the framework, governance, and outcomes to move forward with confidence.
           </p>
         </div>
