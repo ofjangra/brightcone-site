@@ -130,7 +130,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section id="faq" className="relative py-24 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-teal/30 rounded-full blur-3xl" />

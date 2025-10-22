@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f5f5f7;
+  --foreground: #1d1d1f;
   --teal: #14b8a6;
   --teal-dark: #0d9488;
   --electric-blue: #3b82f6;
   --electric-blue-dark: #2563eb;
+  --ios-blur: blur(40px);
+  --ios-card-bg: rgba(255, 255, 255, 0.7);
+  --ios-border: rgba(0, 0, 0, 0.08);
+  --ios-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
 @theme inline {
@@ -22,20 +26,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #f5f5f7;
+    --ios-card-bg: rgba(28, 28, 30, 0.7);
+    --ios-border: rgba(255, 255, 255, 0.1);
+    --ios-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: testFont;
-  src: url("../assets/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf");
+  font-family: Geist;
+  src: url("../assets/fonts/Geist/Geist-VariableFont_wght.ttf");
 }
 
  .hero{
@@ -44,10 +53,45 @@ body {
   background-repeat: no-repeat;
 }
 
-*{
-  font-family: testFont;
 
-  
+
+* {
+  font-family: Geist, -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+}
+
+/* iOS-style frosted glass card */
+.ios-card {
+  background: var(--ios-card-bg);
+  backdrop-filter: var(--ios-blur);
+  -webkit-backdrop-filter: var(--ios-blur);
+  border: 1px solid var(--ios-border);
+  box-shadow: var(--ios-shadow);
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ios-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* iOS-style button */
+.ios-button {
+  background: linear-gradient(135deg, var(--teal), var(--electric-blue));
+  backdrop-filter: blur(20px);
+  border-radius: 14px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.3);
+}
+
+.ios-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 30px rgba(20, 184, 166, 0.4);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 .rect{

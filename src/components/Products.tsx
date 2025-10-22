@@ -101,20 +101,20 @@ const ClipboardIcon = () => (
 
 const Products = () => {
   return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-transparent to-foreground/5">
-      {/* Background Effects */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-electric-blue/40 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-teal/40 rounded-full blur-3xl" />
+    <section id="products" className="relative py-24 overflow-hidden bg-gradient-to-b from-transparent to-teal/5">
+      {/* Background Effects - iOS style */}
+      <div className="absolute inset-0 opacity-[0.08]">
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-electric-blue/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-teal/30 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-teal to-electric-blue bg-clip-text text-transparent">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-teal to-electric-blue bg-clip-text text-transparent">
             Our Products
           </h2>
-          <p className="max-w-4xl mx-auto text-lg text-foreground/80 leading-relaxed">
+          <p className="max-w-4xl mx-auto text-sm sm:text-base md:text-lg text-foreground/80 leading-relaxed px-4">
             At <strong className="text-foreground">Brightcone.ai</strong>, we don&apos;t just advise - we deliver enterprise-ready
             AI platforms and solutions that scale with your business. Our flagship <strong>Brightcone Platform</strong> provides
             the secure, governed AI foundation enterprises need, while our product suite addresses specific business
@@ -122,16 +122,16 @@ const Products = () => {
           </p>
         </div>
 
-        {/* Flagship Product - Brightcone Platform */}
-        <div className="mb-20">
-          <div className=" flagship-product  relative bg-gradient-to-br from-teal/5 to-electric-blue/5 backdrop-blur-md border-2 border-foreground/10 rounded-3xl p-8 md:p-12 hover:border-teal/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal/20">
+        {/* Flagship Product - Brightcone Platform - iOS style */}
+        <div className="mb-12 sm:mb-16 md:mb-20">
+          <div className="flagship-product relative backdrop-blur-xl bg-white/60 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[20px] sm:rounded-[24px] md:rounded-[28px] p-6 sm:p-8 md:p-12 hover:bg-white/70 dark:hover:bg-white/8 hover:border-teal/20 transition-all duration-500 shadow-lg hover:shadow-xl hover:shadow-teal/10">
             {/* Featured Badge */}
             
-            <div className="absolute -top-4 left-8 px-6 py-2 bg-gradient-to-r from-teal to-electric-blue rounded-full">
-              <span className="text-white text-sm font-bold uppercase tracking-wide">Flagship Product</span>
+            <div className="absolute -top-3 sm:-top-4 left-4 sm:left-8 px-4 sm:px-6 py-1.5 sm:py-2 bg-gradient-to-r from-teal to-electric-blue rounded-full shadow-lg shadow-teal/30">
+              <span className="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em]">Flagship Product</span>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
               <div>
                 {/* Icon */}
                 <div className="mb-6 inline-block p-4 bg-gradient-to-br from-teal/20 to-electric-blue/20 rounded-2xl">
@@ -139,12 +139,12 @@ const Products = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-teal to-electric-blue bg-clip-text text-transparent">
+                <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-teal to-electric-blue bg-clip-text text-transparent">
                   Brightcone Platform
                 </h3>
 
                 {/* Description */}
-                <p className="text-foreground/80 mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-foreground/80 mb-4 sm:mb-6 leading-relaxed">
                   The Brightcone Platform is a secure, role-aware AI assistant platform built for modern enterprises.
                   It combines the ease of ChatGPT with the governance, integrations, and security your IT, compliance,
                   and business teams demand.
@@ -234,25 +234,25 @@ const Products = () => {
         </div>
 
         {/* Product Suite Header */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-bold mb-4 text-foreground">Brightcone Product Suite</h3>
-          <p className="text-foreground/70 max-w-3xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-foreground px-4">Brightcone Product Suite</h3>
+          <p className="text-sm sm:text-base text-foreground/70 max-w-3xl mx-auto px-4">
             Purpose-built AI solutions designed to solve specific business challenges across your organization.
           </p>
         </div>
 
         {/* Product Suite Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {/* Bright Bot */}
-          <div className="group relative bg-background/50 backdrop-blur-md border border-foreground/10 rounded-2xl p-6 hover:border-teal/50 transition-all duration-300 hover:shadow-xl hover:shadow-teal/10 hover:-translate-y-1">
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {/* Bright Bot - iOS card */}
+          <div className="group relative backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[24px] p-6 hover:bg-white/60 dark:hover:bg-white/8 hover:border-teal/20 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4 inline-block p-3 bg-gradient-to-br from-teal/10 to-electric-blue/10 rounded-xl group-hover:scale-110 transition-transform">
               <BotIcon />
             </div>
-            <h4 className="text-xl font-bold mb-2 text-foreground group-hover:text-teal transition-colors">
+            <h4 className="text-lg sm:text-xl font-bold mb-2 text-foreground group-hover:text-teal transition-colors">
               Bright Bot
             </h4>
-            <p className="text-sm text-foreground/50 mb-4 font-semibold">AI-Powered Help Desk</p>
-            <p className="text-foreground/70 mb-4">
+            <p className="text-xs sm:text-sm text-foreground/50 mb-3 sm:mb-4 font-semibold">AI-Powered Help Desk</p>
+            <p className="text-sm sm:text-base text-foreground/70 mb-3 sm:mb-4">
               An advanced AI-powered help desk assistant that delivers instant responses, automated reports, and integrated workflows.
             </p>
             <ul className="space-y-2 mb-6">
@@ -275,8 +275,8 @@ const Products = () => {
             </div>
           </div>
 
-          {/* Bright Insights */}
-          <div className="group relative bg-background/50 backdrop-blur-md border border-foreground/10 rounded-2xl p-6 hover:border-electric-blue/50 transition-all duration-300 hover:shadow-xl hover:shadow-electric-blue/10 hover:-translate-y-1">
+          {/* Bright Insights - iOS card */}
+          <div className="group relative backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[24px] p-6 hover:bg-white/60 dark:hover:bg-white/8 hover:border-electric-blue/20 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4 inline-block p-3 bg-gradient-to-br from-teal/10 to-electric-blue/10 rounded-xl group-hover:scale-110 transition-transform">
               <DocumentIcon />
             </div>
@@ -307,8 +307,8 @@ const Products = () => {
             </div>
           </div>
 
-          {/* Bright Connect */}
-          <div className="group relative bg-background/50 backdrop-blur-md border border-foreground/10 rounded-2xl p-6 hover:border-teal/50 transition-all duration-300 hover:shadow-xl hover:shadow-teal/10 hover:-translate-y-1">
+          {/* Bright Connect - iOS card */}
+          <div className="group relative backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[24px] p-6 hover:bg-white/60 dark:hover:bg-white/8 hover:border-teal/20 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4 inline-block p-3 bg-gradient-to-br from-teal/10 to-electric-blue/10 rounded-xl group-hover:scale-110 transition-transform">
               <PhoneIcon />
             </div>
@@ -339,8 +339,8 @@ const Products = () => {
             </div>
           </div>
 
-          {/* Bright Predict */}
-          <div className="group relative bg-background/50 backdrop-blur-md border border-foreground/10 rounded-2xl p-6 hover:border-electric-blue/50 transition-all duration-300 hover:shadow-xl hover:shadow-electric-blue/10 hover:-translate-y-1">
+          {/* Bright Predict - iOS card */}
+          <div className="group relative backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[24px] p-6 hover:bg-white/60 dark:hover:bg-white/8 hover:border-electric-blue/20 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4 inline-block p-3 bg-gradient-to-br from-teal/10 to-electric-blue/10 rounded-xl group-hover:scale-110 transition-transform">
               <UsersIcon />
             </div>
@@ -371,8 +371,8 @@ const Products = () => {
             </div>
           </div>
 
-          {/* Bright Schedule */}
-          <div className="group relative bg-background/50 backdrop-blur-md border border-foreground/10 rounded-2xl p-6 hover:border-teal/50 transition-all duration-300 hover:shadow-xl hover:shadow-teal/10 hover:-translate-y-1">
+          {/* Bright Schedule - iOS card */}
+          <div className="group relative backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[24px] p-6 hover:bg-white/60 dark:hover:bg-white/8 hover:border-teal/20 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4 inline-block p-3 bg-gradient-to-br from-teal/10 to-electric-blue/10 rounded-xl group-hover:scale-110 transition-transform">
               <CalendarIcon />
             </div>
@@ -403,8 +403,8 @@ const Products = () => {
             </div>
           </div>
 
-          {/* Bright Notes */}
-          <div className="group relative bg-background/50 backdrop-blur-md border border-foreground/10 rounded-2xl p-6 hover:border-electric-blue/50 transition-all duration-300 hover:shadow-xl hover:shadow-electric-blue/10 hover:-translate-y-1">
+          {/* Bright Notes - iOS card */}
+          <div className="group relative backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[24px] p-6 hover:bg-white/60 dark:hover:bg-white/8 hover:border-electric-blue/20 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1">
             <div className="mb-4 inline-block p-3 bg-gradient-to-br from-teal/10 to-electric-blue/10 rounded-xl group-hover:scale-110 transition-transform">
               <ClipboardIcon />
             </div>
@@ -436,28 +436,28 @@ const Products = () => {
           </div>
         </div>
 
-        {/* Final CTA */}
-        <div className="mt-20 text-center">
-          <div className="inline-block p-8 md:p-12 bg-gradient-to-br from-teal/5 to-electric-blue/5 backdrop-blur-md border border-foreground/10 rounded-3xl">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
+        {/* Final CTA - iOS style */}
+        <div className="mt-12 sm:mt-16 md:mt-20 text-center px-4">
+          <div className="inline-block p-6 sm:p-8 md:p-12 backdrop-blur-xl bg-white/50 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[20px] sm:rounded-[24px] md:rounded-[28px] shadow-lg">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-foreground">
               Unlock the Power of AI - Safely, Intelligently, and at Enterprise Scale.
             </h3>
-            <p className="text-foreground/70 mb-6 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base text-foreground/70 mb-4 sm:mb-6 max-w-2xl mx-auto">
               From workforce automation to clinical insights, Brightcone&apos;s platform and product suite enable enterprises to adopt AI responsibly and drive measurable results.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link
                 href="/book-demo"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-teal to-electric-blue rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal/50"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-br from-teal to-electric-blue rounded-[14px] shadow-lg shadow-teal/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-teal/40"
               >
                 Book a Demo
-                <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="ml-2 w-4 sm:w-5 h-4 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </Link>
               <Link
                 href="/talk-to-expert"
-                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-foreground border-2 border-foreground/20 rounded-xl transition-all duration-300 hover:scale-105 hover:border-teal hover:text-teal"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-foreground backdrop-blur-xl bg-white/60 dark:bg-white/10 border border-black/10 dark:border-white/20 rounded-[14px] transition-all duration-300 hover:scale-[1.02] hover:bg-white/80 dark:hover:bg-white/20 hover:shadow-lg"
               >
                 Talk to an Expert
               </Link>

@@ -75,7 +75,7 @@ const ProofOfImpact = () => {
   ];
 
   return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-transparent to-foreground/5">
+    <section id="proof-of-impact" className="relative py-24 overflow-hidden bg-gradient-to-b from-transparent to-foreground/5">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-teal/30 rounded-full blur-3xl" />

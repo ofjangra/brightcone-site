@@ -178,7 +178,7 @@ const WhyChoose = () => {
   };
 
   return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-foreground/5 to-transparent">
+    <section id="why-choose" className="relative py-24 overflow-hidden bg-gradient-to-b from-foreground/5 to-transparent">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-electric-blue/30 rounded-full blur-3xl" />
