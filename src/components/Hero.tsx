@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
@@ -12,14 +13,21 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Placeholder logos - replace with actual client logos
+  // Client logos
   const trustedLogos = [
-    { name: 'Company 1', placeholder: true },
-    { name: 'Company 2', placeholder: true },
-    { name: 'Company 3', placeholder: true },
-    { name: 'Company 4', placeholder: true },
-    { name: 'Company 5', placeholder: true },
-    { name: 'Company 6', placeholder: true },
+    { name: 'Abbott', src: '/client-logos/abbott.png' },
+    { name: 'AT&T', src: '/client-logos/at-t-logo.png' },
+    { name: 'Auto Data', src: '/client-logos/auto-data.png' },
+    { name: 'Avesha', src: '/client-logos/avesha.png' },
+    { name: 'BART', src: '/client-logos/bart.png' },
+    { name: 'Canary', src: '/client-logos/canary.png' },
+    { name: 'Compunnel', src: '/client-logos/compunnel.png' },
+    { name: 'Datanitiv', src: '/client-logos/datanitiv-logo.png' },
+    { name: 'EzMedTech', src: '/client-logos/ezmedtech.png' },
+    { name: 'InpharmD', src: '/client-logos/inpharmd.png' },
+    { name: 'Juniper Networks', src: '/client-logos/juniper-networks.png' },
+    { name: 'PRX', src: '/client-logos/prx-logo.png' },
+    { name: 'TestGrid', src: '/client-logos/test-grid.png' },
   ];
 
   return (
@@ -136,8 +144,14 @@ const Hero = () => {
                 className="flex-shrink-0 w-32 sm:w-40 md:w-48 h-16 sm:h-20 md:h-24 mx-2 sm:mx-3 md:mx-4 flex items-center justify-center"
               >
                 {/* iOS-style frosted glass card */}
-                <div className="w-full h-full backdrop-blur-xl bg-white/40 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[12px] sm:rounded-[14px] md:rounded-[16px] flex items-center justify-center text-foreground/30 hover:bg-white/60 dark:hover:bg-white/10 hover:border-teal/20 transition-all duration-300 shadow-sm hover:shadow-md">
-                  <span className="text-xs sm:text-sm font-medium">{logo.name}</span>
+                <div className="w-full h-full backdrop-blur-xl bg-white/40 dark:bg-white/5 border border-black/5 dark:border-white/10 rounded-[12px] sm:rounded-[14px] md:rounded-[16px] flex items-center justify-center p-3 sm:p-4 hover:bg-white/60 dark:hover:bg-white/10 hover:border-teal/20 transition-all duration-300 shadow-sm hover:shadow-md">
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={160}
+                    height={80}
+                    className="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+                  />
                 </div>
               </div>
             ))}
@@ -164,7 +178,7 @@ const Hero = () => {
         }
 
         .animate-scroll {
-          animation: scroll 30s linear infinite;
+          animation: scroll 10s linear infinite;
         }
 
         .animate-scroll:hover {
