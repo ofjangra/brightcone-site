@@ -78,6 +78,7 @@ const Features = () => {
           {/* Advisory & Strategy */}
           <div className="group relative bg-background/50 backdrop-blur-md border border-foreground/10 rounded-2xl p-8 hover:border-teal/50 transition-all duration-300 hover:shadow-2xl hover:shadow-teal/20 hover:-translate-y-2">
             {/* Icon */}
+           
             <div className="mb-6 inline-block p-4 bg-gradient-to-br from-teal/10 to-electric-blue/10 rounded-xl group-hover:scale-110 transition-transform duration-300">
               <LightbulbIcon />
             </div>

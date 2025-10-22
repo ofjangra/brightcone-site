@@ -124,8 +124,9 @@ const Products = () => {
 
         {/* Flagship Product - Brightcone Platform */}
         <div className="mb-20">
-          <div className="relative bg-gradient-to-br from-teal/5 to-electric-blue/5 backdrop-blur-md border-2 border-foreground/10 rounded-3xl p-8 md:p-12 hover:border-teal/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal/20">
+          <div className=" flagship-product  relative bg-gradient-to-br from-teal/5 to-electric-blue/5 backdrop-blur-md border-2 border-foreground/10 rounded-3xl p-8 md:p-12 hover:border-teal/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal/20">
             {/* Featured Badge */}
+            
             <div className="absolute -top-4 left-8 px-6 py-2 bg-gradient-to-r from-teal to-electric-blue rounded-full">
               <span className="text-white text-sm font-bold uppercase tracking-wide">Flagship Product</span>
             </div>
