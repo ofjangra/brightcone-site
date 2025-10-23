@@ -229,15 +229,17 @@ const DeliveryApproach = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Link
-            href="/book-demo"
+          <a
+            href="https://calendly.com/naresh-vemparala-brightcone/30min?back=1&month=2025-10"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-teal to-electric-blue rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-teal/50"
           >
             Start Your 90-Day AI Journey → Book a Demo
             <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

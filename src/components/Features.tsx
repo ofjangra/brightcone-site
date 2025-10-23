@@ -256,15 +256,17 @@ const Features = () => {
           <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-4 sm:mb-6">
             See how Brightcone solutions fit your enterprise
           </p>
-          <Link
-            href="/book-demo"
+          <a
+            href="https://calendly.com/naresh-vemparala-brightcone/30min?back=1&month=2025-10"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-br from-teal to-electric-blue rounded-[14px] shadow-lg shadow-teal/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-teal/40"
           >
             <span className="relative z-10">Book a Demo</span>
             <svg className="ml-2 w-4 sm:w-5 h-4 sm:h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

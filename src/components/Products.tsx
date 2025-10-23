@@ -446,15 +446,17 @@ const Products = () => {
               From workforce automation to clinical insights, Brightcone&apos;s platform and product suite enable enterprises to adopt AI responsibly and drive measurable results.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Link
-                href="/book-demo"
+              <a
+                href="https://calendly.com/naresh-vemparala-brightcone/30min?back=1&month=2025-10"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-br from-teal to-electric-blue rounded-[14px] shadow-lg shadow-teal/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-teal/40"
               >
                 Book a Demo
                 <svg className="ml-2 w-4 sm:w-5 h-4 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
-              </Link>
+              </a>
               <Link
                 href="/talk-to-expert"
                 className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-foreground backdrop-blur-xl bg-white/60 dark:bg-white/10 border border-black/10 dark:border-white/20 rounded-[14px] transition-all duration-300 hover:scale-[1.02] hover:bg-white/80 dark:hover:bg-white/20 hover:shadow-lg"

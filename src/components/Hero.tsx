@@ -49,8 +49,20 @@ const Hero = () => {
       }} />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-6 sm:pb-8 text-center flex-1 flex flex-col justify-center">
+        {/* Logo */}
+        <div className="mb-6 sm:mb-8 flex justify-center">
+          <Image
+            src="/images/brightcone-logo.png"
+            alt="Brightcone Logo"
+            width={180}
+            height={60}
+            className="w-32 sm:w-40 md:w-44 lg:w-48 h-auto"
+            priority
+          />
+        </div>
+
         {/* Main Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight px-2">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 leading-tight px-2">
           <span className="block">From AI Complexity to</span>
           <span className="block bg-gradient-to-r from-teal via-electric-blue to-teal bg-clip-text text-transparent animate-gradient">
             Clarity. Focus. Impact.
@@ -59,23 +71,25 @@ const Hero = () => {
 
         {/* Subtext */}
         <p className="max-w-4xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-foreground/80 mb-8 sm:mb-12 leading-relaxed px-4">
-          Most AI projects stall at the pilot stage - too complex, too generic, too risky to scale.
-          <span className="block mt-2 sm:mt-4">
+          Most AI projects stall at the pilot stage - too complex, too generic, too risky to scale.<br/>
+         
             <strong className="text-foreground">Brightcone.ai</strong> helps enterprises move beyond experiments to impact.
             Our secure, role-aware AI platforms and tailored services are designed to integrate seamlessly
             into your ecosystem and deliver measurable ROI across healthcare, transportation, and enterprise operations.
-          </span>
+          
         </p>
 
         {/* CTAs - iOS style */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4">
-          <Link
-            href="/book-demo"
+          <a
+            href="https://calendly.com/naresh-vemparala-brightcone/30min?back=1&month=2025-10"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group relative w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white bg-gradient-to-br from-teal to-electric-blue rounded-[14px] overflow-hidden shadow-lg shadow-teal/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-teal/40"
           >
             <span className="relative z-10">Book a Demo</span>
             <div className="absolute inset-0 bg-gradient-to-br from-teal-dark to-electric-blue-dark opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </Link>
+          </a>
 
           <Link
             href="/talk-to-expert"

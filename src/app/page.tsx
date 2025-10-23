@@ -8,7 +8,7 @@ import CustomerJourney from "@/components/CustomerJourney";
 import ProofOfImpact from "@/components/ProofOfImpact";
 import Security from "@/components/Security";
 import DeliveryApproach from "@/components/DeliveryApproach";
-import Insights from "@/components/Insights";
+// import Insights from "@/components/Insights";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -27,7 +27,7 @@ export default function Home() {
         <ProofOfImpact />
         <Security />
         <DeliveryApproach />
-        <Insights />
+        {/* <Insights /> */}
         <FAQ />
         <FinalCTA />
       </main>

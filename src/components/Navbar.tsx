@@ -81,12 +81,14 @@ const Navbar = () => {
           {/* Right - Mobile Menu Button & CTA */}
           <div className="flex items-center gap-2 sm:gap-4">
             {/* CTA Button - Hidden on smallest screens */}
-            <Link
-              href="/book-demo"
+            <a
+              href="https://calendly.com/naresh-vemparala-brightcone/30min?back=1&month=2025-10"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center px-4 lg:px-6 py-2 lg:py-2.5 text-xs sm:text-sm font-semibold rounded-[12px] text-white bg-gradient-to-br from-teal to-electric-blue shadow-lg shadow-teal/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-teal/40"
             >
               Book Demo
-            </Link>
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -154,13 +156,15 @@ const Navbar = () => {
             </Link>
 
             {/* Mobile CTA */}
-            <Link
-              href="/book-demo"
+            <a
+              href="https://calendly.com/naresh-vemparala-brightcone/30min?back=1&month=2025-10"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={closeMobileMenu}
               className="block px-4 py-3 mt-2 text-center font-semibold rounded-[12px] text-white bg-gradient-to-br from-teal to-electric-blue shadow-lg shadow-teal/30"
             >
               Book a Demo
-            </Link>
+            </a>
           </div>
         )}
       </div>
